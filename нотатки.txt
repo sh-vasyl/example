@@ -1,0 +1,65 @@
+let - изменяемая переменная
+const - неизменяемая переменная, но можна поменять если задать обьект
+
+"use strict"; - современный режим javascript - всегда игпользовать эту дерективу
+
+null - когда чего просто не существует
+undefined - что-то существует но значения у него никакого нет
+BigInt - работа с большими числами
+
+Обьект
+const obj = {
+    name: "John",
+    age: 25,
+    isMarried: false
+};
+console.log(obj.name);
+
+Массив
+let arr = ['plum', 6, 'orange.jpg', {}, []];
+console.log(arr[1]);
+
+Ок, Нет ответ
+const result = confirm("Are you here?");
+
+Ввести в строку ответ
+const answer = prompt("How old are you?", "18");
+
+Возвращает тип оператора
+typeof()
+
+Интерполяция
+const category = 'toys';
+console.log(`https://someurl.com/${category}/5`);
+
+Увеличивает +1
+++incr incr++
+
+Уменьшает -1
+--decr decr--
+
+&& - И это права и это правда
+
+|| -Или это правда или это правда
+
+! - Оператор отрицания
+
+Не равен
+!=
+
+
+GIT
+git init
+git config --local user.name "Vasyl"
+git config --local user.email up.vasyl@gmail.com
+git config --global user.email up.vasyl@gmail.com
+git add -A - добавить все файлы если появились новые 
+git status - проверить что изменилось
+git commit -a -m"first commit"
+git commit -a -m"add more texts"
+git log - инфо про коммиты
+git push
+git pull
+
+
+
