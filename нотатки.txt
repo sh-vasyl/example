@@ -56,7 +56,6 @@ git config --global user.email up.vasyl@gmail.com
 git add -A - добавить все файлы если появились новые 
 git status - проверить что изменилось
 git commit -a -m"first commit"
-git commit -a -m"add more texts"
 git log - инфо про коммиты
 git push
 git pull
