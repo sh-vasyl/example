@@ -411,6 +411,126 @@ const vasyl = Object.create(soldier);
 
 
 
+// -------------------------- Динамическая типизация JS
+
+
+
+// To String
+
+// 1)
+console.log(typeof(String(null)));
+
+// 2)
+console.log(typeof(5 + ''));
+
+const num = 5;
+
+console.log("https:/vk.com/catalog/" + num);
+
+const fontSize = 26 + 'px';
+
+// To Number
+
+// 1)
+console.log(typeof(Number('3')));
+
+// 2)
+console.log(typeof(+'5'));
+
+// 3)
+console.log(typeof(parseInt("15px", 10)));
+
+let answ = +prompt("Hello", "");
+
+// To boolean
+
+// false - 0, '', null, undefined, NaN;
+// true - все остальное
+
+let switcher = null;
+
+if (switcher) {
+    console.log('Working...');
+}
+
+switcher = 1;
+
+if (switcher) {
+    console.log('Working...');
+}
+
+
+
+// -------------------------- Задачки на собеседований
+
+
+
+// 1)
+// Выведет 5 так как сначало инкремент стоит так - 5++ а не ++5.
+// То есть сначало выведет 5 а потом добавит 1
+let x = 5; 
+alert( x++ );
+
+// 2)
+// [] + false = string (массив это пустая строка)
+// отнимаем null + true = NaN - не число
+console.log([] + false - null + true);
+
+// 3)
+// Выходит 2, так как наследуется последнее значение
+let y = 1;
+let x = y = 2;
+alert(x);
+
+// 4)
+// Переведет все в строку - 12
+console.log([] + 1 + 2);
+
+// 5)
+// Выведет 1, так как [0] обращается по индексу строки
+alert( "1"[0] );
+
+// 6)
+// && - И - запинается на лжы. Выведет null
+console.log(2 && 1 && null && 0 && undefined);
+// Тут undefined
+console.log(2 && 1 && undefined && 0 && null);
+
+// 7)
+// Есть ли разница между
+// Да, есть. Так как два знака !! возвразает значение boolean
+console.log(!!(1 && 2) === (1 && 2));
+
+// 8)
+// || - или - запинается на правде. Выведет 3, последнее значение
+// Сначала будет срабатывать И&& а потом ||
+alert( null || 2 && 3 || 4 );
+
+// 9)
+// a == b?
+// нет. Так как это разные массивы, только имеют такую же внутренность
+const a = [1, 2, 3]; 
+const b = [1, 2, 3];
+
+// 10)
+// Выведет infinity - так как это строка. 
+alert( +"infinity" );
+
+// 11)
+// выведет false так как каждый символ под определенным номером. Е находится ближе чем Я
+console.log("Ежик" > "яблоко");
+
+// 12)
+// Выведет - 2. Запинается на правде
+console.log( 0 || "" || 2 || undefined || true || false );
+
+
+
+// -------------------------- Получение елементов со страницы
+
+
+
+
 
 
 
